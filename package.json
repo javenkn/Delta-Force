@@ -4,7 +4,8 @@
   "description": "[Events and Emitters - Slides](http://slides.com/theremix/events-and-emitters)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha 'lib/*.spec.js'",
+    "watch": "mocha -w 'lib/*.spec.js'"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/javenkn/Delta-Force/issues"
   },
-  "homepage": "https://github.com/javenkn/Delta-Force#readme"
+  "homepage": "https://github.com/javenkn/Delta-Force#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "sinon": "^1.17.4"
+  }
 }
